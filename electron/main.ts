@@ -61,7 +61,9 @@ app.on("window-all-closed", () => {
 });
 
 app.on("ready", () => {
-  createWindow();
+  // if (BrowserWindow.getAllWindows().length === 0) {
+  //   createWindow();
+  // }
 
   // Registering the IPC handler once
   ipcMain.handle("save-file-dialog", async () => {
