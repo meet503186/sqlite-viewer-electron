@@ -64,12 +64,12 @@ This will:
 
 ## Output
 
-The .dmg file will be created in the dist/ folder by default. If you want to change the output directory to release/, modify your package.json as follows:
+The .dmg file will be created in the release/ folder by default. If you want to change the output directory, modify elctron-builder.json5:
 
 ```json
 "build": {
   "directories": {
-    "output": "release"
+    "output": "directory-name"
   },
   ...
 }
